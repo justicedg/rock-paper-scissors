@@ -1,7 +1,8 @@
-// get comp choice
+// COMPUTER CHOICE
+// get random integer
 function getCompChoice() {
     let choice = Math.random();
-
+    // convert random integer to string
     if (choice > 0.66) {
         console.log("rock");
         return 'rock';
@@ -14,15 +15,14 @@ function getCompChoice() {
     }
 }
 
-// get human choice
+// HUMAN CHOICE
 function getHumChoice() {
-    let choice = prompt('Enter choice');
+    let choice = prompt('Enter choice: Rock, Paper or Scissors');
     return choice;
 }
 
-// run game 
+// RUN GAME 
 function playGame() {
-    let roundsPlayed = 0
     let humScore = 0
     let compScore = 0
 
@@ -35,7 +35,7 @@ function playGame() {
         console.log("Human's Score:" + humScore);
         console.log("Computer's Score:" + compScore);
 
-        // plays round to determine winner
+        // play round to determine winner
         function playRound(humChoice, compChoice) {
         humChoice = humChoice.toLowerCase();
 
